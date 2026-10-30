@@ -1,0 +1,21 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Runtime generated data & model files
+*.joblib
+*.joblib.bak
+observations.json
+dresscodes.json
+*_personal.json
+
+# Environment variables & secrets
+.env
+*.env
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
