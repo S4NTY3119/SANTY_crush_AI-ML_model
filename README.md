@@ -1,26 +1,26 @@
-# S4NTY Crush AI & ML Observation Model
+# SANTY Crush AI-ML Model
 
-A terminal-based AI & ML observation tracker that predicts eye-contact likelihood using Decision Trees, forecasts daily dress colors, and provides grounded AI advice.
+A personal ML observation tracker and AI advisor for daily interactions, eye contact forecasting, and dress color predictions.
 
-## Quick Start
+### How to Run
 
-Run the standalone script:
+Just run the script (it'll auto-install scikit-learn & joblib on first launch if you don't have them):
+
 ```bash
 python crush.py
 ```
-*(Dependencies `scikit-learn` and `joblib` are auto-installed on first launch if missing).*
 
-## Main Features
+### Features
 
-- `[1] Predict`: Forecast interaction probability for today or tomorrow.
-- `[2] View data`: Review chronological observation logs.
-- `[3] Add entry`: Record daily eye contact (`<date>, <count>`).
-- `[4] Ask Perseus`: Consult the AI advisor for grounded feedback.
-- `[5] Approach her`: Predict her next dress color and get approach readiness scoring.
+- `[1] Predict` - Forecasts future eye-contact likelihood based on past weekday patterns.
+- `[2] View data` - Shows logged observation history.
+- `[3] Add entry` - Record looks for today or a specific date (`<date>, <count>`).
+- `[4] Ask Perseus` - Personal AI advisor powered by NVIDIA NIM (prompts for API key on first use if not set).
+- `[5] Approach her` - Predict her next dress color and take a quick 5-question situational quiz for approach readiness.
 
-## Customization
+### Setup & Customization
 
-Open `crush.py` and customize the variables at the top of the file:
-- **`SYS_PROMPT`**: Replace `{sys_prompt}` with your custom persona or instructions.
-- **`ML_DATA`**: Add past observation tuples `(month, day, situation, looks)` to pre-train.
-- **API Key**: Set `NIM_API_KEY` in your environment, or paste it in the CLI when prompted.
+Open `crush.py` and tweak the config at the top:
+- `SYS_PROMPT` - Change Perseus's instructions or background context.
+- `ML_DATA` - Add any past observation tuples `(month, day, situation, looks)` to seed the model.
+- `NIM_API_KEY` - Set in your terminal (`$env:NIM_API_KEY="your-key"`) or paste it right into the terminal when asked.
